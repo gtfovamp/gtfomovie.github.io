@@ -1,0 +1,441 @@
+body
+{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+}
+
+h1
+{
+    margin: 0px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+span
+{
+    font-weight: 500;
+}
+
+header
+{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #313131;
+    justify-content: center;
+}
+.bt-bord
+{
+    width: 100px;
+    height: 2px;
+    transition: 0.3s;
+    animation: flow 3s ease-in-out infinite;
+    background: linear-gradient(-60deg, #31cfff, #d31ae0, #f51d70, #30c4f1); 
+    background-size: 300%;
+    border-radius: 20px;
+    position: absolute;
+}
+.inner-header
+{
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    h1
+    {
+        animation: flow 3s ease-in-out infinite;
+        background: linear-gradient(-60deg, #ff00bf, #000, #8000ff, #ff009b);
+          background-size: auto;
+          background-clip: border-box;
+        background-size: 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: inherit;
+        margin-left: 5px;
+        font-size: 56px;
+        font-weight: bold;
+    }
+}
+
+
+@keyframes flow {
+    0% {
+        background-position: 50%;
+    }
+    50% {
+        background-position: 100% 200%;
+    }
+    100% {
+        background-position: 200% 300%;
+    }
+}
+
+@keyframes howerCard {
+    0% {
+        width: 150px;
+        height: 250px;
+    }
+    100% {
+        width: 160px;
+        height: 270px;
+    }
+}
+
+.nav-bar
+{
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.nav-bar-item
+{
+    margin-left: 30px;
+
+    text-decoration: none;
+    color: white;
+    &:hover
+    {
+        animation: flow 3s ease-in-out infinite;
+        background: linear-gradient(-60deg, #31cfff, #d31ae0, #f51d70, #30c4f1); 
+        background-size: 300%; 
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serials
+{
+    height: 300px;
+    background-color: #252525;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.movies
+{
+    height: 300px;
+    background-color: #252525;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.monitor
+{
+    height: 400px;
+    background-color: #252525;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    border-radius: 20px;
+}
+.card
+{
+    position: relative;
+    width: 150px;
+    height: 250px;
+    transform-style: preserve-3d;
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    img
+    {
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    &:hover
+    {
+        img
+        {
+            opacity: 0.5;
+        }
+    }
+}
+.title
+{
+    position: absolute;
+    top:40px;
+    transform: translateZ(40px);
+}
+
+.donut
+{
+    position: absolute;
+    transform: translateZ(40px);
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+.vote
+{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    right: 32px;
+    transform: translateZ(50px);
+}
+
+.stars
+{
+    position: absolute;
+    color: gold;
+    font-size: 18px;
+    transform: translateZ(50px);
+    bottom: 35px;
+
+
+}
+
+.main
+{
+    width: 1000px;
+    z-index: 1;
+}
+h2
+{
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+.big-card
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    min-height: 400px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: flex-end;
+
+    position: relative;
+    img
+    {
+        position: relative;
+        object-fit: cover;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.big-card-inner
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    h3
+    {
+        font-family: "Montserrat", helvetica, arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+
+.go-site
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #ffffff;
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
+    border-radius: 10px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    position: relative;
+
+    a
+    {
+        color: #ffffff;
+        text-decoration: none;
+        position: absolute;
+        width: 125px;
+        height: 26px;
+        text-align-last: center;
+        top: -3px;
+        padding-top: 11px;
+        left: -3px;
+        padding-bottom: 0px;
+    }
+}
+
+.go-site:hover
+{
+    color: black;
+    background-color: white;
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.big-card-info
+{
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    color: #2a9fff;
+    line-height: 1;
+    margin: 0;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.big-card-description
+{
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    font-weight: 300;
+    opacity: 0.84;
+    margin-bottom: 2em;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-right: 12px;
+    height: -webkit-fill-available;
+}
+.big-card-rating
+{
+    display: flex;
+    position: absolute;
+    height: 100px;
+    bottom: -17px;
+}
+.donut-big
+{
+    position: absolute;
+    bottom: 14px;
+    left: 170px;
+}
+
+.hello
+{
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) -180%, #130f21 70%), url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces//iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg);
+    background-size: cover;
+
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px; 
+    h2
+    {   
+        font-family: 'Source Sans Pro';
+        margin-left: 80px;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    h3
+    {
+        font-family: 'Source Sans Pro';
+        margin-left: 80px;
+        font-weight: 400;
+        font-size: 40px;
+        margin-top: 0px;
+    }
+}
+
+.search
+{
+    position: relative;
+    width: 600px;
+    height: 30px;
+    align-self: center;
+    background-color: white;
+    border-radius: 40px;
+    input
+    {
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 540px;
+        height: inherit;
+        padding: 0px;
+        padding-left: 12px;
+        position: absolute;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.6);
+
+    }
+}
+
+.submit
+{
+    display: flex;
+    height: 35px;
+    width: 70px;
+    border-radius: 40px;
+    transition: 300ms;
+    background: rgb(46,247,255);
+    background: linear-gradient(90deg, #ff8181 0%, #f46eff 100%);
+    position: absolute;
+    right: -18px;
+    bottom: -2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    &:hover
+    {
+        animation: howerSubmit 1s ease-in-out infinite;
+        background: linear-gradient(-60deg, #9481ff, #f46eff, #ff8181, #9481ff); 
+        background-size: 300%; 
+    }
+}
+
+@keyframes howerSubmit {
+    0% {
+        background-position: 50%;
+    }
+    50% {
+        background-position: 100% 200%;
+    }
+    100% {
+        background-position: 200% 300%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Source+Sans+Pro:wght@400;700&display=swap');

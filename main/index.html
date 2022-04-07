@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <script defer src="./scripts/scripts.js" type="module"></script>
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer type="text/javascript" src="\node_modules\donutty\dist\donutty-jquery.min.js"></script>
+    <script defer src="./scripts/movie_repository.js"></script>
+    <script defer src="./scripts/script.js"></script>
+    <title>./gtfomovie</title>
+</head>
+<body>
+    <header>
+        <div class="inner-header">
+            <div style="display: flex; width: 285px; align-items: center; column-gap: 10px; font-family: sans-serif; cursor: pointer;">
+                <img style="border-radius: 7px;" src="https://sun9-34.userapi.com/impg/HRhgUtTrgICqilZQdiorA60ySnrDgeCrbB1LWw/5xOHrdytSlo.jpg?size=736x733&quality=96&sign=ee73bf75b9136b10071662c5eb50636a&type=album" width="60" height="60">
+                <img style="width: 250px;
+                position: absolute;
+                left: 50px;
+                top: -40px;" src="./resources/wikar.png" hidden>
+            </div>
+            <div class="nav-bar">
+                <div class="bt-bord" hidden></div>
+                <a class="nav-bar-item" href="../search/?query=Spider%20Man&type=movie">Movies</a>
+                <a class="nav-bar-item" href="../search/?query=Peaky%20Blinders&type=tv">Tv Shows</a>
+                <a class="nav-bar-item" href="../search/?query=Jared%20Leto&type=people">People</a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="hello">
+            <h2>Welcome!</h2>
+            <h3>We will help you find your movie, serial, people!</h3>
+            <div class="search">
+                <input type="text" name="query" placeholder="Search movie, tv show, people...">
+                <div class="submit">
+                    Search
+                </div>
+            </div>
+        </div>
+        <h2>Most Feature</h2>
+        <div class='monitor'>
+        </div>
+        <h2 style="margin-top: 60px;">Popular Serials</h2>
+        <div class='serials'>
+        </div>
+        <h2 style="margin-top: 60px;">Popular Movies</h2>
+        <div class='movies'>
+        </div>
+    </div>
+</body>
+</html>
